@@ -1,0 +1,111 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a pleasant blue-themed background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container for the app content */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading style */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #e0f7fa;
+}
+
+/* Input field styling */
+#city {
+    width: 80%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1em;
+    outline: none;
+}
+
+/* Button styling */
+#getWeather {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: #0288d1;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#getWeather:hover {
+    background-color: #026caa;
+}
+
+/* Result display styling */
+#result {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Weather information styling */
+#result h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #b3e5fc;
+}
+
+#result p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #city {
+        width: 100%;
+    }
+
+    #getWeather {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #result h2 {
+        font-size: 1.3em;
+    }
+
+    #result p {
+        font-size: 1em;
+    }
+}
