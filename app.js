@@ -7,7 +7,7 @@ document.getElementById('getWeather').addEventListener('click', () => {
             if (data.cod === 200) {
                 resultDiv.innerHTML = `
                     <h2>${data.name}</h2>
-                    <p>Temperature: ${data.main.temp} °C</p>
+                    <p>Temperature: ${data.main.temp.toFixed(0)} °C</p>
                     <p>Weather: ${data.weather[0].description}</p>
                 `;
             } else {
